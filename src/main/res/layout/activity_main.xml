@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/gameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="133dp"
+            android:layout_marginTop="540dp"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:showDividers="middle|none">
+
+            <ImageButton
+                android:id="@+id/leftButton"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="50"
+                android:alpha="0.5"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/left_btn_image" />
+
+            <Space
+                android:layout_width="304dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50" />
+
+            <ImageButton
+                android:id="@+id/speedButton"
+                android:layout_width="308dp"
+                android:layout_height="81dp"
+                android:layout_weight="50"
+                android:alpha="0.8"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/speed_btn_image" />
+
+            <Space
+                android:layout_width="304dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50" />
+
+            <ImageButton
+                android:id="@+id/rightButton"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="50"
+                android:alpha="0.5"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/right_btn_image" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/menuButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="10dp"
+
+            android:alpha="0.75"
+            android:src="@android:drawable/ic_media_pause" />
+
+        <TextView
+            android:id="@+id/metersTextBox"
+            android:layout_width="239dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:paddingLeft="20dp"
+            android:text="    Пройдено: 0 м"
+            android:textAllCaps="true"
+            android:textColor="@android:color/background_light"
+            android:textColorHint="@android:color/background_light"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+</LinearLayout>
